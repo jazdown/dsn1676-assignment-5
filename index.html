@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-
 <head>
-    <meta charset="utf-8">
-    <title>Assignment 4</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+   <meta charset="utf-8">
+    <title>Intro to JQuery</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  
-  <script src="js/main.js"></script>
-
+    
+<div class= "style-back-form">
+   <form class="form" method="post" action="#">
+        <div class="grey">
+            <label class="title" for="todo">To do:</label>
+            <input class="todo" id="todo">
+            <button class="addbutton" type="submit">Add</button>
+        </div>
+   </form>    
+    
+    <ol class="list added"></ol>
+    
+</div>
+     
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>      
+ <script src="js/main.js"></script>
+       
 </body>
 </html>

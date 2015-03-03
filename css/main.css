@@ -16,3 +16,54 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  text-align:center;
+  background-color: #e2e2e2;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.list {
+  list-style-type: none;
+  background-color: white;
+  font-weight: normal;
+  font-size: .7em;
+}
+
+.list:strikethrough {
+  opacity: 30;
+  -webkit-animation: list 4s linear forwards;
+  animation: list 4s linear forwards;
+}
+
+.form {
+  background-color: #FFF;
+  margin: 0.75em;
+}
+
+.todo {
+  margin-top: .5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.addbutton {
+  background-color: #97C9B1;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.check {
+  background-color: #e2e2e2;
+  margin-left: 10em;
+  text-align: right;
+}
+
+.js-highlight {
+  color: grey;
+  text-decoration: line-through;
+}
