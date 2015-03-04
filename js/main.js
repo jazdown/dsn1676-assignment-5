@@ -8,21 +8,21 @@ $form.on('submit', function (e) { //an action that should happen when we submit 
     e.preventDefault();
     var $li = $('<li>'); //making new li
     var $button = $('<button>'); //making a new button
-    $button.html('X'); //connecting to html of button, putting text in the buttons html
-    $button.addClass('check'); //adding rando class
-    $button.on('click', function () { //whenever you click the button, the item will be removed.
+    $button.html('X');
+    $button.addClass('check');
+    $button.on('click', function () {
         $li.remove(); 
     });   
     
-    var $todoH2 = $('<h2>').html($todo.val()); //creates a new H2, also fills it with what is typed in
-    $todoH2.append($button); //connecting the button to the H2
+    var $todoH2 = $('<h2>').html($todo.val());
+    $todoH2.append($button);
     
     $todoH2.on('click', function () {
     $todoH2.addClass ('strikethrough') ();
     });
     
-    $li.append($todoH2); //adding the H2 to the li
-    $added.append($li); //put li into list
+    $li.append($todoH2);
+    $added.append($li);
   
 });
 
